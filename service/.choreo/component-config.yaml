@@ -1,0 +1,12 @@
+apiVersion: core.choreo.dev/v1beta1
+kind: ComponentConfig
+spec:
+  # +optional Incoming connection details for the component (AKA endpoints).
+  inbound:
+    # +required Unique name for the endpoint. (This name will be used when generating the managed API)
+    - name: jobs
+      port: 5000
+      type: REST
+      networkVisibility: Organization
+      context: /
+      schemaFilePath: openapi.yaml
