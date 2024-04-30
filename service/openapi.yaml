@@ -79,8 +79,6 @@ components:
           type: string
         job_description:
           type: string
-        salary:
-          type: number
         company_name:
           type: string
         company_description:
